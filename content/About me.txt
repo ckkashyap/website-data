@@ -1,0 +1,15 @@
+<p>
+My name is C.K.Kashyap. I was born on 2nd November, 1978. I am a
+computer programmer. I work at Adobe.  I am passionate about
+computers and anything connected with it (even remotely).
+</p>
+<p>
+I graduated with an MMS degree from BITS Pilani in 2000.
+</p>
+<p>
+While I am a Malayalee by birth, I have been in most parts of India. I spent
+most of my childhood in a place called Bilaspur in Madhya Pradesh.
+</p>
+<p>
+Hindi, English and Malayalam are the languages I am fairly comfortable with.
+</p>
