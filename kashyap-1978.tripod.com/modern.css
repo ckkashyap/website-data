@@ -1,0 +1,129 @@
+.Header {
+	font-weight:600;
+	font-size: x-large;     /* should be same as an h1 header */
+	/*margin:20px 0 10px 0;*/
+	/*padding:0.3ex 0 1.3ex 20px;*/
+	border-style:solid;
+	border-color:black;
+	border-width:1px 0px;
+	background-color:#eee;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	/*height:14px; /* UNTESTED!  Was 14px */
+	text-align: center;
+}
+.mbutton {
+	/*float: left;*/
+	margin: 10 0 0 0; 
+	border: 1px solid;
+	border-width: 0 0 0 0;
+	padding: 0 0;
+}
+
+.mbutton a {
+	display: block;
+	margin: 0 0; 
+	/*padding: 1px 1px 1px 3px;*/
+	background-color: white;
+	/*color: #000;*/
+	border: 1px solid #000;
+	border-width: 0px 0px 1px 0px;
+	margin: 5 5;
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	background-color: #ddd;
+}
+.mbutton a:hover {
+	text-decoration: none;
+	background-color: #eee;
+}
+
+body{
+	background-color: #ccc;
+}
+
+.mainTable{
+	width:100%;
+	height:100%;
+	border:1;
+}
+
+.mainTable .leftColumn{
+	width: 15%;
+	vertical-align:top;
+	padding:20 10;
+	background-color: #ddd;
+	border: 2px solid;
+	border-color:black;
+	border-width: 1 1 1 1;
+}
+
+.mainTable .verticalBar{
+	border: 2px solid;
+	border-color:black;
+	border-width: 0 0 0 1;
+	width:1px;
+}
+
+.mainTable .contentArea{
+	width:85%;
+	height:100%;
+	vertical-align:top;
+	background-color: #ddd;
+}
+
+.subTable{
+	width:100%;
+	height:100%;
+	border:1 solid;
+	vertical-align:top;
+	padding:0;
+
+}
+.subTable .dirMenu{
+	vertical-align:top;
+	height:5%;
+	text-align:left;
+	border: 0 0 0 0  solid;
+}
+
+.subTable .fileArea{
+	vertical-align:top;
+	background-color:#eee;
+	padding:50 50;
+	border:2 solid;
+	font-size:16;
+}
+
+.fileArea a{
+}
+
+.fileArea img{
+	float:right;
+}
+
+.dirMenu{
+	background-color:#ddd;
+}
+
+.dirMenu a{
+	margin: 0 0; 
+	display:"";
+	/*padding: 1px 1px 1px 3px;*/
+	background-color: white;
+	/*color: #000;*/
+	border: 1px solid #000;
+	border-width: 0px 0px 1px 0px;
+	margin: 5 5;
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	background-color: #ddd;
+}
+.dirMenu a:hover {
+	text-decoration: none;
+	background-color: #eee;
+}

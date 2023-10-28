@@ -1,0 +1,686 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<LINK rel="stylesheet" type="text/css" href="/modern.css">
+</HEAD>
+	<body><!--'"</title></head>-->
+
+<script type="text/javascript">
+//OwnerIQ
+var __oiq_pct = 50;
+if( __oiq_pct>=100 || Math.floor(Math.random()*100/(100-__oiq_pct)) > 0 ) {
+var _oiqq = _oiqq || [];
+_oiqq.push(['oiq_addPageBrand','Lycos']);
+_oiqq.push(['oiq_addPageCat','Internet > Websites']);
+_oiqq.push(['oiq_addPageLifecycle','Intend']);
+_oiqq.push(['oiq_doTag']);
+(function() {
+var oiq = document.createElement('script'); oiq.type = 'text/javascript'; oiq.async = true;
+oiq.src = document.location.protocol + '//px.owneriq.net/stas/s/lycosn.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);
+})();
+}
+//Google Analytics
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-21402695-19']);
+_gaq.push(['_setDomainName','tripod.com']);
+_gaq.push(['_setCustomVar',1,'member_name','kashyap-1978',3]);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//Lycos Init
+function getReferrer() {
+var all= this.document.cookie;
+if (all== '') return false;
+var cookie_name = 'REFERRER=';
+var start = all.lastIndexOf(cookie_name);
+if (start == -1) return false;
+start += cookie_name.length;
+var end = all.indexOf(';', start);
+if (end == -1) end = all.length;
+return all.substring(start, end);
+}
+function getQuery() {
+var rfr = getReferrer();
+if (rfr == '') return false;
+var q = extractQuery(rfr, 'yahoo.com', 'p=');
+if (q) return q;
+q = extractQuery(rfr, '', 'q=');
+return q ? q : "";
+}
+function extractQuery(full, site, q_param) {
+var start = full.lastIndexOf(site);
+if (start == -1) return false;
+start = full.lastIndexOf(q_param);
+if (start == -1) return false;
+start += q_param.length;
+var end = full.indexOf('&', start);
+if (end == -1) end = full.length;
+return unescape(full.substring(start, end)).split(" ").join("+");
+}
+function generateHref(atag, template){
+atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_','Check%20out%20this%20Tripod%20Member%20site!'); 
+}
+var lycos_ad = Array();
+var lycos_onload_timer;
+var cm_role = "live";
+var cm_host = "tripod.lycos.com";
+var cm_taxid = "/memberembedded";
+var tripod_member_name = "kashyap-1978";
+var tripod_member_page = "kashyap-1978/Escapades/Goodies/Construct_WAV.html";
+var tripod_ratings_hash = "1698513541:d19c62eff3a2b0eb6060ea40e0f4f597";
+
+var lycos_ad_category = null;
+
+var lycos_ad_remote_addr = "209.202.244.9";
+var lycos_ad_www_server = "www.tripod.lycos.com";
+var lycos_ad_track_small = "";
+var lycos_ad_track_served = "";
+var lycos_search_query = getQuery();
+</script>
+
+<script type="text/javascript" src="https://scripts.lycos.com/catman/init.js"></script>
+
+<script type='text/javascript'>
+ var googletag = googletag || {};
+ googletag.cmd = googletag.cmd || [];
+ (function() {
+   var gads = document.createElement('script');
+   gads.async = true;
+   gads.type = 'text/javascript';
+   var useSSL = 'https:' == document.location.protocol;
+   gads.src = (useSSL ? 'https:' : 'http:') +
+     '//www.googletagservices.com/tag/js/gpt.js';
+   var node = document.getElementsByTagName('script')[0];
+   node.parentNode.insertBefore(gads, node);
+ })();
+</script>
+
+<script type='text/javascript'>
+ googletag.cmd.push(function() {
+   googletag.defineSlot('/95963596/TRI_300X250_dfp', [300, 250], 'div-gpt-ad-1450204159126-0').addService(googletag.pubads());
+   googletag.defineSlot('/95963596/TRI_above_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-1').addService(googletag.pubads());
+   googletag.defineSlot('/95963596/TRI_below_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-2').addService(googletag.pubads());
+   googletag.pubads().enableSingleRequest();
+   googletag.enableServices();
+ });
+</script>
+
+
+<script type="text/javascript"> 
+(function(isV)
+{
+    if( !isV )
+    {
+        return;
+    }
+    var adMgr = new AdManager();
+    var lycos_prod_set = adMgr.chooseProductSet();
+    var slots = ["leaderboard", "leaderboard2", "toolbar_image", "toolbar_text", "smallbox", "top_promo", "footer2", "slider"];
+    var adCat = this.lycos_ad_category;
+    adMgr.setForcedParam('page', (adCat && adCat.dmoz) ? adCat.dmoz : 'member');
+    if (this.lycos_search_query)
+    {
+        adMgr.setForcedParam("keyword", this.lycos_search_query);
+    } 
+    else if(adCat && adCat.find_what)
+    {
+        adMgr.setForcedParam('keyword', adCat.find_what);
+    }
+    
+    for (var s in slots)
+    {
+        var slot = slots[s];
+        if (adMgr.isSlotAvailable(slot))
+        {
+            this.lycos_ad[slot] = adMgr.getSlot(slot);
+        }
+    }
+
+    adMgr.renderHeader();
+    adMgr.renderFooter();
+}((function() {
+
+var w = 0, h = 0, minimumThreshold = 300;
+
+if (top == self)
+{
+    return true;
+}
+if (typeof(window.innerWidth) == 'number' )
+{
+    w = window.innerWidth;
+    h = window.innerHeight;
+}
+else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight))
+{
+    w = document.documentElement.clientWidth;
+    h = document.documentElement.clientHeight;
+}
+else if (document.body && (document.body.clientWidth || document.body.clientHeight))
+{
+    w = document.body.clientWidth;
+    h = document.body.clientHeight;
+}
+return ((w > minimumThreshold) && (h > minimumThreshold));
+}())));
+
+
+
+
+window.onload = function()
+{
+    var f = document.getElementById("FooterAd");
+    var b = document.getElementsByTagName("body")[0];
+    b.appendChild(f);
+    f.style.display = "block";
+    document.getElementById('lycosFooterAdiFrame').src = '/adm/ad/footerAd.iframe.html';
+    
+
+
+    
+    // DOM Inj Ad
+    (function(isTrellix)
+    {
+        var e = document.createElement('iframe');
+        e.style.border = '0';
+        e.style.margin = 0;
+        e.style.display = 'block';
+        e.style.cssFloat = 'right';
+        e.style.height = '254px';
+        e.style.overflow = 'hidden';
+        e.style.padding = 0;
+        e.style.width = '300px';
+
+
+        var isBlokedByDomain = function( href )
+        {
+            var blockedDomains = [
+                "ananyaporn13000.tripod.com",
+                "xxxpornxxx.tripod.com"
+            ];
+            var flag = false;
+            
+            for( var i=0; i<blockedDomains.length; i++ )
+            {
+                if( href.search( blockedDomains[ i ] ) >= 0 )
+                {
+                    flag = true;
+                }
+            }
+            return flag;
+        }
+
+        var getMetaContent = function( metaName )
+        {
+            var metas = document.getElementsByTagName('meta');
+            for (i=0; i<metas.length; i++)
+            { 
+                if( metas[i].getAttribute("name") == metaName )
+                { 
+                    return metas[i].getAttribute("content"); 
+                } 
+            }
+            return false;
+        }
+        
+        var getCommentNodes = function(regexPattern)
+        {
+            var nodes = {};
+            var nodesA = [];
+            var preferredNodesList = ['a', 'c', 'b'];
+        
+            (function getNodesThatHaveComments(n, pattern)
+            {
+                if (n.hasChildNodes())
+                {
+                    if (n.tagName === 'IFRAME')
+                    {
+                        return false;
+                    }
+                    for (var i = 0; i < n.childNodes.length; i++)
+                    {
+                        if ((n.childNodes[i].nodeType === 8) && (pattern.test(n.childNodes[i].nodeValue)))
+                        {
+                            var areaName = pattern.exec(n.childNodes[i].nodeValue)[1];
+                            nodes[areaName] = n;
+                        }
+                        else if (n.childNodes[i].nodeType === 1)
+                        {
+                            getNodesThatHaveComments(n.childNodes[i], pattern);
+                        }
+                    }
+                }
+            }(document.body, regexPattern));
+
+            for (var i in preferredNodesList)
+            {
+                if (nodes[preferredNodesList[i]])
+                {
+                    if( isTrellix && nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode )
+                    {
+                        nodesA.push(nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode);
+                    }
+                    else
+                    {
+                        nodesA.push( nodes[preferredNodesList[i]] );
+                    }
+                }
+            }
+            return nodesA;
+        }
+        
+        
+        var properNode = null;
+        var areaNodes = getCommentNodes( new RegExp( '^area Type="area_(\\w+)"' ) );
+
+        for (var i = 0; i < areaNodes.length; i++)
+        {
+            var a = parseInt(getComputedStyle(areaNodes[i]).width);
+            if ((a >= 300) && (a <= 400))
+            {
+                properNode = areaNodes[i];
+                break;
+            }
+        }
+
+
+        var propertyName = getMetaContent("property") || false;
+        if( isTrellix && (properNode) )
+        {
+            e.src = '/adm/ad/injectAd.iframe.html';
+            properNode.insertBefore(e, properNode.firstChild);
+        }
+        else if( isTrellix && !( properNode ) ) // Slap the ad eventhought there is no alocated slot
+        {
+            e.src = '/adm/ad/injectAd.iframe.html';
+            e.style.cssFloat = 'none';
+            var cdiv = document.createElement('div');
+            cdiv.style = "width:300px;margin:10px auto;";
+            cdiv.appendChild( e );
+            b.insertBefore(cdiv, b.lastChild);
+        }
+        else if( !isBlokedByDomain( location.href ) )
+        {
+            var injF = document.createElement('iframe');
+            injF.style.border = '0';
+            injF.style.margin = 0;
+            injF.style.display = 'block';
+            injF.style.cssFloat = 'none';
+            injF.style.height = '254px';
+            injF.style.overflow = 'hidden';
+            injF.style.padding = 0;
+            injF.style.width = '300px';
+            injF.src = '/adm/ad/injectAd.iframe.html';
+
+            if( b && ( !isTrellix || ( typeof isTrellix == "undefined" ) ) ) // All other tripod props
+            {
+                var cdiv = document.createElement('div');
+                cdiv.style = "width:300px;margin:10px auto;";
+                cdiv.appendChild( injF );
+                b.insertBefore(cdiv, b.lastChild);
+            } 
+        }
+  }( document.isTrellix ));
+}
+
+</script>
+
+<div id="tb_container" style="background:#DFDCCF; border-bottom:1px solid #393939; position:relative; z-index:999999999!important">
+<!--form name="search" onSubmit="return searchit()" id='header_search' >
+<input type="text" placeholder="Search" size=30 name="search2" value="">
+<input type="button" value="Go!" onClick="searchit()">
+</form>
+<style>
+form#header_search {
+    width: 916px;
+    margin: 0 auto 8px;
+    position: relative;
+}
+
+
+form#header_search input {
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    background: #F4F2E9;
+    border: 1px solid #BBB8B8;
+    transition: background-color 300ms ease-out,
+                color 300ms ease;
+}
+
+form#header_search input[type="text"] {
+    width: 100%;
+}
+form#header_search input[type="text"]:focus {
+    border-color: #A2D054;
+    background-color: #fff;
+    box-shadow: 0 0px 12px -4px #A2D054;
+}
+
+
+
+form#header_search input[type="button"] {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    opacity: 1;
+    background: #DFDCCF;
+    color: #463734;
+    width: 125px;
+    cursor: pointer;
+    height: 38px;
+    border: none;
+}
+form#header_search input[type="text"]:focus ~ input[type='button']:hover,
+form#header_search input[type='button']:hover {
+    background-color: #A5CE56;
+    color: #fff;
+}
+form#header_search input[type="text"]:focus ~ input[type='button'] {
+    background-color: #52AEDF;
+    color: #fff;
+}
+
+</style>
+
+<script>
+function searchit(){
+    
+    // determine environment 
+    var search_env 
+    if (lycos_ad_www_server.indexOf(".pd.") > -1) {
+       search_env = 'http://search51.pd.lycos.com/a/';
+    } else if (lycos_ad_www_server.indexOf(".qa.") > -1) {
+       search_env = 'http://search51.qa.lycos.com/a/';
+    } else {
+       search_env = 'http://search51.lycos.com/a/';
+    }
+
+var search_term = encodeURIComponent(document.search.search2.value)
+var search_url = search_env+search_term;
+window.open(search_url);
+
+return false
+}
+</script-->
+<style>
+    .adCenterClass{margin:0 auto}
+</style>
+<div id="tb_ad" class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
+
+<div id="ad_container" style="display:block!important; float:left; width:728px ">
+<script type="text/javascript">
+if (typeof lycos_ad !== "undefined" && "leaderboard" in lycos_ad) {
+  document.write(lycos_ad['leaderboard']);
+}
+</script>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+if (typeof lycos_ad !== "undefined" && "slider" in lycos_ad) {
+  document.write(lycos_ad['slider']);
+}
+</script> <!-- added 7/22 -->
+<div id="FooterAd" style="background:#DFDCCF; border-top:1px solid #393939; clear:both; display:none; width:100%!important; position:relative; z-index:999999!important; height:90px!important"> 
+<div class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
+<div id="footerAd_container" style="display:block!important; float:left; width:728px">
+<iframe id="lycosFooterAdiFrame" style="border:0; display:block; float:left; height:96px; overflow:hidden; padding:0; width:750px"></iframe>
+</div>
+</div>
+</div>
+
+
+		<div class=Header>Construct_WAV</div>
+		<BR>
+		<table class=mainTable>
+			<tr>
+				<td class="leftColumn">
+					<div class=mbutton ><A href='Construct_WAV.html'>Construct_WAV</A><A href='Raw_Ethernet.html'>Raw_Ethernet</A><A href='Read_File_From_Kernel_Module.html'>Read_File_From_Kernel_Module</A><A href='accelerate.pl.html'>accelerate.pl</A><A href='header_file_dependencies.html'>header_file_dependencies</A><A href='mboot.patch.html'>mboot.patch</A><A href='vi_tips.html'>vi_tips</A></div>
+				</td>
+				<td class=verticalBar>
+					 
+				</td>
+				<td class=contentArea>
+					<table class=subTable>
+						<tr>
+							<td class=dirMenu>
+								<div class=dirMenu><DIV class=topNav><a href='/About_me.html'>Home</a></DIV></div>
+							</td>
+						</tr>
+						<tr>
+							<td class=fileArea>
+								<PRE><font color="#a52829">  1</font>  <font color="#a520f7">#include </font><font color="#ff00ff">&lt;stdio.h&gt;</font>
+<font color="#a52829">  2</font>  <font color="#a520f7">#include </font><font color="#ff00ff">&lt;string.h&gt;</font>
+<font color="#a52829">  3</font>  <font color="#a520f7">#include </font><font color="#ff00ff">&lt;stdlib.h&gt;</font>
+<font color="#a52829">  4</font>  <font color="#a520f7">#include </font><font color="#ff00ff">&lt;math.h&gt;</font>
+<font color="#a52829">  5</font>
+<font color="#a52829">  6</font>  <font color="#298a52"><b>typedef</b></font> <font color="#298a52"><b>union</b></font>{
+<font color="#a52829">  7</font>          <font color="#298a52"><b>unsigned</b></font> <font color="#298a52"><b>int</b></font> integer;
+<font color="#a52829">  8</font>          <font color="#298a52"><b>char</b></font> byte[<font color="#ff00ff">4</font>];
+<font color="#a52829">  9</font>  }intStruct;
+<font color="#a52829"> 10</font>
+<font color="#a52829"> 11</font>
+<font color="#a52829"> 12</font>  <font color="#298a52"><b>typedef</b></font> <font color="#298a52"><b>struct</b></font> _octaveTable{
+<font color="#a52829"> 13</font>          <font color="#298a52"><b>char</b></font> symbol[<font color="#ff00ff">3</font>];
+<font color="#a52829"> 14</font>          <font color="#298a52"><b>float</b></font> frequency;
+<font color="#a52829"> 15</font>          <font color="#298a52"><b>struct</b></font> _octaveTable *next;
+<font color="#a52829"> 16</font>  } octaveTable;
+<font color="#a52829"> 17</font>  octaveTable octaveTableHead;
+<font color="#a52829"> 18</font>
+<font color="#a52829"> 19</font>
+<font color="#a52829"> 20</font>  <font color="#298a52"><b>void</b></font> insertOctave(<font color="#298a52"><b>char</b></font> *symbol,<font color="#298a52"><b>float</b></font> frequency){
+<font color="#a52829"> 21</font>          octaveTable *node=(octaveTable*)malloc(<font color="#a52829"><b>sizeof</b></font>(octaveTable));
+<font color="#a52829"> 22</font>          strcpy(node-&gt;symbol,symbol);
+<font color="#a52829"> 23</font>          node-&gt;frequency=frequency;
+<font color="#a52829"> 24</font>          node-&gt;next=octaveTableHead.next;
+<font color="#a52829"> 25</font>          octaveTableHead.next=node;
+<font color="#a52829"> 26</font>  }
+<font color="#a52829"> 27</font>
+<font color="#a52829"> 28</font>  <font color="#298a52"><b>float</b></font> getFrequency(<font color="#298a52"><b>char</b></font> *symbol){
+<font color="#a52829"> 29</font>          octaveTable *node=octaveTableHead.next;
+<font color="#a52829"> 30</font>          <font color="#a52829"><b>do</b></font>{
+<font color="#a52829"> 31</font>                  <font color="#a52829"><b>if</b></font>(!strcmp(node-&gt;symbol,symbol))<font color="#a52829"><b>return</b></font> node-&gt;frequency;
+<font color="#a52829"> 32</font>                  node=node-&gt;next;
+<font color="#a52829"> 33</font>          }<font color="#a52829"><b>while</b></font>(node!=<font color="#ff00ff">NULL</font>);
+<font color="#a52829"> 34</font>          <font color="#a52829"><b>return</b></font> -<font color="#ff00ff">1</font>;
+<font color="#a52829"> 35</font>  }
+<font color="#a52829"> 36</font>
+<font color="#a52829"> 37</font>  <font color="#298a52"><b>void</b></font> destroySymbolTable(){
+<font color="#a52829"> 38</font>          octaveTable *node=octaveTableHead.next;
+<font color="#a52829"> 39</font>          octaveTable *tmp;
+<font color="#a52829"> 40</font>          <font color="#a52829"><b>do</b></font>{
+<font color="#a52829"> 41</font>                  tmp=node;
+<font color="#a52829"> 42</font>                  node=node-&gt;next;
+<font color="#a52829"> 43</font>                  <font color="#a52829"><b>if</b></font>(tmp==<font color="#ff00ff">NULL</font>)<font color="#a52829"><b>break</b></font>;
+<font color="#a52829"> 44</font>                  free(tmp);
+<font color="#a52829"> 45</font>          }<font color="#a52829"><b>while</b></font>(node!=<font color="#ff00ff">NULL</font>);
+<font color="#a52829"> 46</font>  }
+<font color="#a52829"> 47</font>
+<font color="#a52829"> 48</font>
+<font color="#a52829"> 49</font>
+<font color="#a52829"> 50</font>  <font color="#0000ff">//The Global variables used in the program</font>
+<font color="#a52829"> 51</font>  <font color="#298a52"><b>FILE</b></font> *tempFile=<font color="#ff00ff">NULL</font>;
+<font color="#a52829"> 52</font>  <font color="#298a52"><b>FILE</b></font> *outputFile=<font color="#ff00ff">NULL</font>;
+<font color="#a52829"> 53</font>  <font color="#298a52"><b>FILE</b></font> *octave=<font color="#ff00ff">NULL</font>;
+<font color="#a52829"> 54</font>  <font color="#298a52"><b>FILE</b></font> *music=<font color="#ff00ff">NULL</font>;
+<font color="#a52829"> 55</font>  intStruct waveLength;
+<font color="#a52829"> 56</font>  <font color="#298a52"><b>unsigned</b></font> <font color="#298a52"><b>char</b></font> waveHeader[<font color="#ff00ff">40</font>]={
+<font color="#a52829"> 57</font>          <font color="#ff00ff">0x52</font>,<font color="#ff00ff">0x49</font>,<font color="#ff00ff">0x46</font>,<font color="#ff00ff">0x46</font>,<font color="#0000ff">//RIFF</font>
+<font color="#a52829"> 58</font>          <font color="#ff00ff">0xFC</font>,<font color="#ff00ff">0x31</font>,<font color="#ff00ff">0x02</font>,<font color="#ff00ff">0x00</font>,
+<font color="#a52829"> 59</font>          <font color="#ff00ff">0x57</font>,<font color="#ff00ff">0x41</font>,<font color="#ff00ff">0x56</font>,<font color="#ff00ff">0x45</font>,<font color="#0000ff">//WAVE</font>
+<font color="#a52829"> 60</font>          <font color="#ff00ff">0x66</font>,<font color="#ff00ff">0x6D</font>,<font color="#ff00ff">0x74</font>,<font color="#ff00ff">0x20</font>,<font color="#0000ff">//fmt </font>
+<font color="#a52829"> 61</font>          <font color="#ff00ff">0x10</font>,<font color="#ff00ff">0x00</font>,<font color="#ff00ff">0x00</font>,<font color="#ff00ff">0x00</font>,<font color="#0000ff">//fmt chunck size</font>
+<font color="#a52829"> 62</font>          <font color="#ff00ff">0x01</font>,<font color="#ff00ff">0x00</font>,<font color="#0000ff">//This is uncompressed</font>
+<font color="#a52829"> 63</font>          <font color="#ff00ff">0x02</font>,<font color="#ff00ff">0x00</font>,<font color="#0000ff">//This is stereo pal!</font>
+<font color="#a52829"> 64</font>          <font color="#ff00ff">0x44</font>,<font color="#ff00ff">0xAC</font>,<font color="#ff00ff">0x00</font>,<font color="#ff00ff">0x00</font>,<font color="#0000ff">//44100 samples per second</font>
+<font color="#a52829"> 65</font>          <font color="#ff00ff">0x88</font>,<font color="#ff00ff">0x58</font>,<font color="#ff00ff">0x01</font>,<font color="#ff00ff">0x00</font>,<font color="#0000ff">//88200 bytes per second</font>
+<font color="#a52829"> 66</font>          <font color="#ff00ff">0x02</font>,<font color="#ff00ff">0x00</font>,<font color="#0000ff">//Block align=2</font>
+<font color="#a52829"> 67</font>          <font color="#ff00ff">0x08</font>,<font color="#ff00ff">0x00</font>,<font color="#0000ff">//8 bits per sample</font>
+<font color="#a52829"> 68</font>          <font color="#ff00ff">0x64</font>,<font color="#ff00ff">0x61</font>,<font color="#ff00ff">0x74</font>,<font color="#ff00ff">0x61</font><font color="#0000ff">//data</font>
+<font color="#a52829"> 69</font>  };
+<font color="#a52829"> 70</font>  <font color="#0000ff">//////////////////////////////////////////////////////</font>
+<font color="#a52829"> 71</font>  <font color="#0000ff">//The macros used in the program</font>
+<font color="#a52829"> 72</font>  <font color="#a520f7">#define SAMPLING_RATE </font><font color="#ff00ff">44100.0</font>
+<font color="#a52829"> 73</font>  <font color="#a520f7">#define PI </font><font color="#ff00ff">3.14</font>
+<font color="#a52829"> 74</font>  <font color="#a520f7">#define RADIAN(x) ((PI*(x))/</font><font color="#ff00ff">180.0</font><font color="#a520f7">)</font>
+<font color="#a52829"> 75</font>  <font color="#0000ff">///////////////////////////////////////////////////////</font>
+<font color="#a52829"> 76</font>
+<font color="#a52829"> 77</font>
+<font color="#a52829"> 78</font>
+<font color="#a52829"> 79</font>  <font color="#298a52"><b>void</b></font> error(<font color="#298a52"><b>char</b></font> *msg){
+<font color="#a52829"> 80</font>          printf(<font color="#ff00ff">&quot;</font><font color="#6b59ce">%s</font><font color="#6b59ce">\n</font><font color="#ff00ff">Aborting!</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>,msg);
+<font color="#a52829"> 81</font>          exit(<font color="#ff00ff">0</font>);
+<font color="#a52829"> 82</font>  }
+<font color="#a52829"> 83</font>
+<font color="#a52829"> 84</font>  <font color="#298a52"><b>void</b></font> addWave(<font color="#298a52"><b>float</b></font> frequency,<font color="#298a52"><b>int</b></font> ticks,<font color="#298a52"><b>int</b></font> volume){<font color="#0000ff">//tick=0.1Second</font>
+<font color="#a52829"> 85</font>          <font color="#298a52"><b>float</b></font> radian;
+<font color="#a52829"> 86</font>          <font color="#298a52"><b>float</b></font> step=(<font color="#298a52"><b>float</b></font>)((<font color="#ff00ff">360.0</font>/SAMPLING_RATE)*frequency);
+<font color="#a52829"> 87</font>          <font color="#298a52"><b>int</b></font> numberOfSamples=(<font color="#298a52"><b>int</b></font>)(SAMPLING_RATE*ticks/<font color="#ff00ff">100</font>);
+<font color="#a52829"> 88</font>          <font color="#298a52"><b>float</b></font> degree;
+<font color="#a52829"> 89</font>          <font color="#298a52"><b>int</b></font> i,j;
+<font color="#a52829"> 90</font>          <font color="#298a52"><b>char</b></font> sample;
+<font color="#a52829"> 91</font>          <font color="#298a52"><b>float</b></font> attack=<font color="#ff00ff">.2</font>,decay=<font color="#ff00ff">.2</font>,sustain=<font color="#ff00ff">.4</font>,release=<font color="#ff00ff">.2</font>;
+<font color="#a52829"> 92</font>          <font color="#298a52"><b>float</b></font> tempVolume;
+<font color="#a52829"> 93</font>          <font color="#298a52"><b>float</b></font> attackFactor;
+<font color="#a52829"> 94</font>          <font color="#298a52"><b>float</b></font> decayFactor;
+<font color="#a52829"> 95</font>          <font color="#298a52"><b>float</b></font> releaseFactor;
+<font color="#a52829"> 96</font>
+<font color="#a52829"> 97</font>          <font color="#298a52"><b>int</b></font> numberOfAttackSamples=attack*numberOfSamples;
+<font color="#a52829"> 98</font>          <font color="#298a52"><b>int</b></font> numberOfDecaySamples=decay*numberOfSamples;
+<font color="#a52829"> 99</font>          <font color="#298a52"><b>int</b></font> numberOfSustainSamples=sustain*numberOfSamples;
+<font color="#a52829">100</font>          <font color="#298a52"><b>int</b></font> numberOfReleaseSamples=release*numberOfSamples;
+<font color="#a52829">101</font>
+<font color="#a52829">102</font>          <font color="#298a52"><b>int</b></font> attackSamplesLimit=numberOfAttackSamples;
+<font color="#a52829">103</font>          <font color="#298a52"><b>int</b></font> decaySamplesLimit=numberOfDecaySamples+attackSamplesLimit;
+<font color="#a52829">104</font>          <font color="#298a52"><b>int</b></font> sustainSamplesLimit=numberOfSustainSamples+decaySamplesLimit;
+<font color="#a52829">105</font>          <font color="#298a52"><b>int</b></font> releaseSamplesLimit=numberOfReleaseSamples+sustainSamplesLimit;
+<font color="#a52829">106</font>
+<font color="#a52829">107</font>          attackFactor=volume/(<font color="#298a52"><b>float</b></font>)numberOfAttackSamples;
+<font color="#a52829">108</font>          decayFactor=volume/((<font color="#298a52"><b>float</b></font>)numberOfDecaySamples*<font color="#ff00ff">2</font>);
+<font color="#a52829">109</font>          releaseFactor=volume/((<font color="#298a52"><b>float</b></font>)numberOfReleaseSamples*<font color="#ff00ff">2</font>);
+<font color="#a52829">110</font>
+<font color="#a52829">111</font>
+<font color="#a52829">112</font>          tempVolume=<font color="#ff00ff">0</font>;
+<font color="#a52829">113</font>
+<font color="#a52829">114</font>
+<font color="#a52829">115</font>
+<font color="#a52829">116</font>
+<font color="#a52829">117</font>          degree=<font color="#ff00ff">0</font>;
+<font color="#a52829">118</font>          <font color="#a52829"><b>for</b></font>(i=<font color="#ff00ff">0</font>;i&lt;numberOfSamples;i++){
+<font color="#a52829">119</font>                  <font color="#a52829"><b>if</b></font>(i&lt;attackSamplesLimit){
+<font color="#a52829">120</font>                          tempVolume+=attackFactor;
+<font color="#a52829">121</font>                  }<font color="#a52829"><b>else</b></font> <font color="#a52829"><b>if</b></font>(i&lt;decaySamplesLimit){
+<font color="#a52829">122</font>                          tempVolume-=decayFactor;
+<font color="#a52829">123</font>                  }<font color="#a52829"><b>else</b></font> <font color="#a52829"><b>if</b></font>(i&lt;sustainSamplesLimit){
+<font color="#a52829">124</font>
+<font color="#a52829">125</font>                  }<font color="#a52829"><b>else</b></font> <font color="#a52829"><b>if</b></font>(i&lt;releaseSamplesLimit){
+<font color="#a52829">126</font>                          tempVolume-=releaseFactor;
+<font color="#a52829">127</font>                  }
+<font color="#a52829">128</font>                  radian=RADIAN(degree);
+<font color="#a52829">129</font>                  sample=(<font color="#298a52"><b>char</b></font>)(tempVolume*sin(radian));
+<font color="#a52829">130</font>                  sample+=(<font color="#298a52"><b>char</b></font>)((tempVolume)*sin(RADIAN(degree+<font color="#ff00ff">30</font>)));
+<font color="#a52829">131</font>                  sample+=<font color="#ff00ff">127</font>;
+<font color="#a52829">132</font>                  fprintf(tempFile,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%c%c</font><font color="#ff00ff">&quot;</font>,sample,sample);
+<font color="#a52829">133</font>                  degree+=step;
+<font color="#a52829">134</font>                  waveLength.integer+=<font color="#ff00ff">2</font>;
+<font color="#a52829">135</font>          }
+<font color="#a52829">136</font>  }
+<font color="#a52829">137</font>  <font color="#298a52"><b>void</b></font> generateWave(){
+<font color="#a52829">138</font>          <font color="#298a52"><b>int</b></font> i;
+<font color="#a52829">139</font>          <font color="#298a52"><b>char</b></font> byte;
+<font color="#a52829">140</font>          <font color="#a52829"><b>for</b></font>(i=<font color="#ff00ff">0</font>;i&lt;<font color="#ff00ff">40</font>;i++){
+<font color="#a52829">141</font>                  fprintf(outputFile,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%c</font><font color="#ff00ff">&quot;</font>,waveHeader[i]);
+<font color="#a52829">142</font>          }
+<font color="#a52829">143</font>          <font color="#a52829"><b>for</b></font>(i=<font color="#ff00ff">0</font>;i&lt;<font color="#ff00ff">4</font>;i++){
+<font color="#a52829">144</font>                  fprintf(outputFile,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%c</font><font color="#ff00ff">&quot;</font>,waveLength.byte[i]);
+<font color="#a52829">145</font>          }
+<font color="#a52829">146</font>          tempFile=fopen(<font color="#ff00ff">&quot;temp&quot;</font>,<font color="#ff00ff">&quot;r&quot;</font>);
+<font color="#a52829">147</font>          <font color="#a52829"><b>while</b></font>(<font color="#ff00ff">1</font>){
+<font color="#a52829">148</font>                  fscanf(tempFile,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%c</font><font color="#ff00ff">&quot;</font>,&amp;byte);
+<font color="#a52829">149</font>                  <font color="#a52829"><b>if</b></font>(feof(tempFile))<font color="#a52829"><b>break</b></font>;
+<font color="#a52829">150</font>                  fprintf(outputFile,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%c</font><font color="#ff00ff">&quot;</font>,byte);
+<font color="#a52829">151</font>          }
+<font color="#a52829">152</font>          fclose(tempFile);
+<font color="#a52829">153</font>  }
+<font color="#a52829">154</font>
+<font color="#a52829">155</font>  <font color="#298a52"><b>int</b></font> main(<font color="#298a52"><b>int</b></font> argc, <font color="#298a52"><b>char</b></font>* argv[]){
+<font color="#a52829">156</font>          <font color="#298a52"><b>char</b></font> octaveSignature[<font color="#ff00ff">5</font>];
+<font color="#a52829">157</font>          <font color="#298a52"><b>char</b></font> symbol[<font color="#ff00ff">3</font>];
+<font color="#a52829">158</font>          <font color="#298a52"><b>float</b></font> frequency;
+<font color="#a52829">159</font>          <font color="#298a52"><b>float</b></font> chord[<font color="#ff00ff">6</font>];
+<font color="#a52829">160</font>
+<font color="#a52829">161</font>          <font color="#298a52"><b>int</b></font> ticks;
+<font color="#a52829">162</font>          <font color="#298a52"><b>char</b></font> line[<font color="#ff00ff">1024</font>];
+<font color="#a52829">163</font>          <font color="#298a52"><b>int</b></font> volume;
+<font color="#a52829">164</font>          <font color="#a52829"><b>if</b></font>(argc&lt;<font color="#ff00ff">2</font>){
+<font color="#a52829">165</font>                  printf(<font color="#ff00ff">&quot;Usage:</font><font color="#6b59ce">\n\t</font><font color="#ff00ff"> play MusicFile [volume]</font><font color="#6b59ce">\n\n</font><font color="#ff00ff">&quot;</font>,argv[<font color="#ff00ff">0</font>]);
+<font color="#a52829">166</font>                  error(<font color="#ff00ff">&quot;You have not specified the music file!&quot;</font>);
+<font color="#a52829">167</font>          }
+<font color="#a52829">168</font>          volume=<font color="#ff00ff">50</font>;
+<font color="#a52829">169</font>          <font color="#a52829"><b>if</b></font>(argc==<font color="#ff00ff">3</font>){
+<font color="#a52829">170</font>                  volume=atoi(argv[<font color="#ff00ff">2</font>]);
+<font color="#a52829">171</font>          }
+<font color="#a52829">172</font>          printf(<font color="#ff00ff">&quot;BlueScorpion presents...Play!</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>);
+<font color="#a52829">173</font>          printf(<font color="#ff00ff">&quot;Author: kashyap</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>);
+<font color="#a52829">174</font>          printf(<font color="#ff00ff">&quot;Varifying octave...&quot;</font>);
+<font color="#a52829">175</font>          octave=fopen(<font color="#ff00ff">&quot;octave&quot;</font>,<font color="#ff00ff">&quot;r&quot;</font>);
+<font color="#a52829">176</font>          <font color="#a52829"><b>if</b></font>(octave==<font color="#ff00ff">NULL</font>){
+<font color="#a52829">177</font>                  error(<font color="#ff00ff">&quot;Could not find octave!&quot;</font>);
+<font color="#a52829">178</font>          }
+<font color="#a52829">179</font>          fscanf(octave,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%s</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>,octaveSignature);
+<font color="#a52829">180</font>          <font color="#a52829"><b>if</b></font>(octaveSignature[<font color="#ff00ff">0</font>]!=<font color="#ff00ff">'M'</font>||octaveSignature[<font color="#ff00ff">1</font>]!=<font color="#ff00ff">'U'</font>||octaveSignature[<font color="#ff00ff">2</font>]!=<font color="#ff00ff">'S'</font>||octaveSignature[<font color="#ff00ff">3</font>]!=<font color="#ff00ff">'I'</font>||octaveSignature[<font color="#ff00ff">4</font>]!=<font color="#ff00ff">'C'</font>)error(<font color="#ff00ff">&quot;Bad octave file&quot;</font>);
+<font color="#a52829">181</font>          printf(<font color="#ff00ff">&quot;Setting up the Octave table...</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>);
+<font color="#a52829">182</font>          <font color="#a52829"><b>while</b></font>(!feof(octave)){
+<font color="#a52829">183</font>                  fgets(line,<font color="#ff00ff">1024</font>,octave);
+<font color="#a52829">184</font>                  <font color="#a52829"><b>if</b></font>(line[<font color="#ff00ff">0</font>]==<font color="#ff00ff">'#'</font>)<font color="#a52829"><b>continue</b></font>;
+<font color="#a52829">185</font>                  sscanf(line,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%s</font><font color="#ff00ff"> </font><font color="#6b59ce">%f</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>,symbol,&amp;frequency);
+<font color="#a52829">186</font>                  <font color="#a52829"><b>if</b></font>(feof(octave))<font color="#a52829"><b>break</b></font>;
+<font color="#a52829">187</font>                  insertOctave(symbol,frequency);
+<font color="#a52829">188</font>                  printf(<font color="#ff00ff">&quot;</font><font color="#6b59ce">%s</font><font color="#ff00ff">=</font><font color="#6b59ce">%f</font><font color="#ff00ff">Hz</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>,symbol,frequency);
+<font color="#a52829">189</font>          }
+<font color="#a52829">190</font>          music=fopen(argv[<font color="#ff00ff">1</font>],<font color="#ff00ff">&quot;r&quot;</font>);
+<font color="#a52829">191</font>          <font color="#a52829"><b>if</b></font>(music==<font color="#ff00ff">NULL</font>){
+<font color="#a52829">192</font>                  error(<font color="#ff00ff">&quot;Could not open the specified music file!&quot;</font>);
+<font color="#a52829">193</font>          }
+<font color="#a52829">194</font>          tempFile=fopen(<font color="#ff00ff">&quot;temp&quot;</font>,<font color="#ff00ff">&quot;w&quot;</font>);
+<font color="#a52829">195</font>          <font color="#a52829"><b>while</b></font>(!feof(music)){
+<font color="#a52829">196</font>                  fgets(line,<font color="#ff00ff">1024</font>,music);
+<font color="#a52829">197</font>                  <font color="#a52829"><b>if</b></font>(line[<font color="#ff00ff">0</font>]==<font color="#ff00ff">'#'</font>)<font color="#a52829"><b>continue</b></font>;
+<font color="#a52829">198</font>                  sscanf(line,<font color="#ff00ff">&quot;</font><font color="#6b59ce">%s</font><font color="#ff00ff"> </font><font color="#6b59ce">%d</font><font color="#6b59ce">\n</font><font color="#ff00ff">&quot;</font>,symbol,&amp;ticks);
+<font color="#a52829">199</font>                  frequency=getFrequency(symbol);
+<font color="#a52829">200</font>                  <font color="#a52829"><b>if</b></font>(frequency==-<font color="#ff00ff">1</font>)error(<font color="#ff00ff">&quot;Invalid symbol encountered in the music file!&quot;</font>);
+<font color="#a52829">201</font>                  <font color="#a52829"><b>if</b></font>(feof(music))<font color="#a52829"><b>break</b></font>;
+<font color="#a52829">202</font>                  addWave(frequency,ticks,volume);
+<font color="#a52829">203</font>          }
+<font color="#a52829">204</font>
+<font color="#a52829">205</font>          fclose(tempFile);
+<font color="#a52829">206</font>
+<font color="#a52829">207</font>          outputFile=fopen(<font color="#ff00ff">&quot;output.wav&quot;</font>,<font color="#ff00ff">&quot;w&quot;</font>);
+<font color="#a52829">208</font>          <font color="#a52829"><b>if</b></font>(outputFile==<font color="#ff00ff">NULL</font>){
+<font color="#a52829">209</font>                  error(<font color="#ff00ff">&quot;Error opening output.wav for writing!&quot;</font>);
+<font color="#a52829">210</font>          }
+<font color="#a52829">211</font>          generateWave();
+<font color="#a52829">212</font>          fclose(outputFile);
+<font color="#a52829">213</font>          destroySymbolTable();
+<font color="#a52829">214</font>          <font color="#a52829"><b>return</b></font> <font color="#ff00ff">0</font>;
+<font color="#a52829">215</font>  }
+<font color="#a52829">216</font>
+<font color="#a52829">217</font>
+<font color="#a52829">218</font>
+</pre>
+</PRE>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</HTML>

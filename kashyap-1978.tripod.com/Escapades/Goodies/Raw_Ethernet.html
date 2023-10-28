@@ -1,0 +1,691 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<LINK rel="stylesheet" type="text/css" href="/modern.css">
+</HEAD>
+	<body><!--'"</title></head>-->
+
+<script type="text/javascript">
+//OwnerIQ
+var __oiq_pct = 50;
+if( __oiq_pct>=100 || Math.floor(Math.random()*100/(100-__oiq_pct)) > 0 ) {
+var _oiqq = _oiqq || [];
+_oiqq.push(['oiq_addPageBrand','Lycos']);
+_oiqq.push(['oiq_addPageCat','Internet > Websites']);
+_oiqq.push(['oiq_addPageLifecycle','Intend']);
+_oiqq.push(['oiq_doTag']);
+(function() {
+var oiq = document.createElement('script'); oiq.type = 'text/javascript'; oiq.async = true;
+oiq.src = document.location.protocol + '//px.owneriq.net/stas/s/lycosn.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);
+})();
+}
+//Google Analytics
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-21402695-19']);
+_gaq.push(['_setDomainName','tripod.com']);
+_gaq.push(['_setCustomVar',1,'member_name','kashyap-1978',3]);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//Lycos Init
+function getReferrer() {
+var all= this.document.cookie;
+if (all== '') return false;
+var cookie_name = 'REFERRER=';
+var start = all.lastIndexOf(cookie_name);
+if (start == -1) return false;
+start += cookie_name.length;
+var end = all.indexOf(';', start);
+if (end == -1) end = all.length;
+return all.substring(start, end);
+}
+function getQuery() {
+var rfr = getReferrer();
+if (rfr == '') return false;
+var q = extractQuery(rfr, 'yahoo.com', 'p=');
+if (q) return q;
+q = extractQuery(rfr, '', 'q=');
+return q ? q : "";
+}
+function extractQuery(full, site, q_param) {
+var start = full.lastIndexOf(site);
+if (start == -1) return false;
+start = full.lastIndexOf(q_param);
+if (start == -1) return false;
+start += q_param.length;
+var end = full.indexOf('&', start);
+if (end == -1) end = full.length;
+return unescape(full.substring(start, end)).split(" ").join("+");
+}
+function generateHref(atag, template){
+atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_','Check%20out%20this%20Tripod%20Member%20site!'); 
+}
+var lycos_ad = Array();
+var lycos_onload_timer;
+var cm_role = "live";
+var cm_host = "tripod.lycos.com";
+var cm_taxid = "/memberembedded";
+var tripod_member_name = "kashyap-1978";
+var tripod_member_page = "kashyap-1978/Escapades/Goodies/Raw_Ethernet.html";
+var tripod_ratings_hash = "1698513542:8a242bf6e2dab5cd8f1509ce0eb12229";
+
+var lycos_ad_category = null;
+
+var lycos_ad_remote_addr = "209.202.244.9";
+var lycos_ad_www_server = "www.tripod.lycos.com";
+var lycos_ad_track_small = "";
+var lycos_ad_track_served = "";
+var lycos_search_query = getQuery();
+</script>
+
+<script type="text/javascript" src="https://scripts.lycos.com/catman/init.js"></script>
+
+<script type='text/javascript'>
+ var googletag = googletag || {};
+ googletag.cmd = googletag.cmd || [];
+ (function() {
+   var gads = document.createElement('script');
+   gads.async = true;
+   gads.type = 'text/javascript';
+   var useSSL = 'https:' == document.location.protocol;
+   gads.src = (useSSL ? 'https:' : 'http:') +
+     '//www.googletagservices.com/tag/js/gpt.js';
+   var node = document.getElementsByTagName('script')[0];
+   node.parentNode.insertBefore(gads, node);
+ })();
+</script>
+
+<script type='text/javascript'>
+ googletag.cmd.push(function() {
+   googletag.defineSlot('/95963596/TRI_300X250_dfp', [300, 250], 'div-gpt-ad-1450204159126-0').addService(googletag.pubads());
+   googletag.defineSlot('/95963596/TRI_above_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-1').addService(googletag.pubads());
+   googletag.defineSlot('/95963596/TRI_below_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-2').addService(googletag.pubads());
+   googletag.pubads().enableSingleRequest();
+   googletag.enableServices();
+ });
+</script>
+
+
+<script type="text/javascript"> 
+(function(isV)
+{
+    if( !isV )
+    {
+        return;
+    }
+    var adMgr = new AdManager();
+    var lycos_prod_set = adMgr.chooseProductSet();
+    var slots = ["leaderboard", "leaderboard2", "toolbar_image", "toolbar_text", "smallbox", "top_promo", "footer2", "slider"];
+    var adCat = this.lycos_ad_category;
+    adMgr.setForcedParam('page', (adCat && adCat.dmoz) ? adCat.dmoz : 'member');
+    if (this.lycos_search_query)
+    {
+        adMgr.setForcedParam("keyword", this.lycos_search_query);
+    } 
+    else if(adCat && adCat.find_what)
+    {
+        adMgr.setForcedParam('keyword', adCat.find_what);
+    }
+    
+    for (var s in slots)
+    {
+        var slot = slots[s];
+        if (adMgr.isSlotAvailable(slot))
+        {
+            this.lycos_ad[slot] = adMgr.getSlot(slot);
+        }
+    }
+
+    adMgr.renderHeader();
+    adMgr.renderFooter();
+}((function() {
+
+var w = 0, h = 0, minimumThreshold = 300;
+
+if (top == self)
+{
+    return true;
+}
+if (typeof(window.innerWidth) == 'number' )
+{
+    w = window.innerWidth;
+    h = window.innerHeight;
+}
+else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight))
+{
+    w = document.documentElement.clientWidth;
+    h = document.documentElement.clientHeight;
+}
+else if (document.body && (document.body.clientWidth || document.body.clientHeight))
+{
+    w = document.body.clientWidth;
+    h = document.body.clientHeight;
+}
+return ((w > minimumThreshold) && (h > minimumThreshold));
+}())));
+
+
+
+
+window.onload = function()
+{
+    var f = document.getElementById("FooterAd");
+    var b = document.getElementsByTagName("body")[0];
+    b.appendChild(f);
+    f.style.display = "block";
+    document.getElementById('lycosFooterAdiFrame').src = '/adm/ad/footerAd.iframe.html';
+    
+
+
+    
+    // DOM Inj Ad
+    (function(isTrellix)
+    {
+        var e = document.createElement('iframe');
+        e.style.border = '0';
+        e.style.margin = 0;
+        e.style.display = 'block';
+        e.style.cssFloat = 'right';
+        e.style.height = '254px';
+        e.style.overflow = 'hidden';
+        e.style.padding = 0;
+        e.style.width = '300px';
+
+
+        var isBlokedByDomain = function( href )
+        {
+            var blockedDomains = [
+                "ananyaporn13000.tripod.com",
+                "xxxpornxxx.tripod.com"
+            ];
+            var flag = false;
+            
+            for( var i=0; i<blockedDomains.length; i++ )
+            {
+                if( href.search( blockedDomains[ i ] ) >= 0 )
+                {
+                    flag = true;
+                }
+            }
+            return flag;
+        }
+
+        var getMetaContent = function( metaName )
+        {
+            var metas = document.getElementsByTagName('meta');
+            for (i=0; i<metas.length; i++)
+            { 
+                if( metas[i].getAttribute("name") == metaName )
+                { 
+                    return metas[i].getAttribute("content"); 
+                } 
+            }
+            return false;
+        }
+        
+        var getCommentNodes = function(regexPattern)
+        {
+            var nodes = {};
+            var nodesA = [];
+            var preferredNodesList = ['a', 'c', 'b'];
+        
+            (function getNodesThatHaveComments(n, pattern)
+            {
+                if (n.hasChildNodes())
+                {
+                    if (n.tagName === 'IFRAME')
+                    {
+                        return false;
+                    }
+                    for (var i = 0; i < n.childNodes.length; i++)
+                    {
+                        if ((n.childNodes[i].nodeType === 8) && (pattern.test(n.childNodes[i].nodeValue)))
+                        {
+                            var areaName = pattern.exec(n.childNodes[i].nodeValue)[1];
+                            nodes[areaName] = n;
+                        }
+                        else if (n.childNodes[i].nodeType === 1)
+                        {
+                            getNodesThatHaveComments(n.childNodes[i], pattern);
+                        }
+                    }
+                }
+            }(document.body, regexPattern));
+
+            for (var i in preferredNodesList)
+            {
+                if (nodes[preferredNodesList[i]])
+                {
+                    if( isTrellix && nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode )
+                    {
+                        nodesA.push(nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode);
+                    }
+                    else
+                    {
+                        nodesA.push( nodes[preferredNodesList[i]] );
+                    }
+                }
+            }
+            return nodesA;
+        }
+        
+        
+        var properNode = null;
+        var areaNodes = getCommentNodes( new RegExp( '^area Type="area_(\\w+)"' ) );
+
+        for (var i = 0; i < areaNodes.length; i++)
+        {
+            var a = parseInt(getComputedStyle(areaNodes[i]).width);
+            if ((a >= 300) && (a <= 400))
+            {
+                properNode = areaNodes[i];
+                break;
+            }
+        }
+
+
+        var propertyName = getMetaContent("property") || false;
+        if( isTrellix && (properNode) )
+        {
+            e.src = '/adm/ad/injectAd.iframe.html';
+            properNode.insertBefore(e, properNode.firstChild);
+        }
+        else if( isTrellix && !( properNode ) ) // Slap the ad eventhought there is no alocated slot
+        {
+            e.src = '/adm/ad/injectAd.iframe.html';
+            e.style.cssFloat = 'none';
+            var cdiv = document.createElement('div');
+            cdiv.style = "width:300px;margin:10px auto;";
+            cdiv.appendChild( e );
+            b.insertBefore(cdiv, b.lastChild);
+        }
+        else if( !isBlokedByDomain( location.href ) )
+        {
+            var injF = document.createElement('iframe');
+            injF.style.border = '0';
+            injF.style.margin = 0;
+            injF.style.display = 'block';
+            injF.style.cssFloat = 'none';
+            injF.style.height = '254px';
+            injF.style.overflow = 'hidden';
+            injF.style.padding = 0;
+            injF.style.width = '300px';
+            injF.src = '/adm/ad/injectAd.iframe.html';
+
+            if( b && ( !isTrellix || ( typeof isTrellix == "undefined" ) ) ) // All other tripod props
+            {
+                var cdiv = document.createElement('div');
+                cdiv.style = "width:300px;margin:10px auto;";
+                cdiv.appendChild( injF );
+                b.insertBefore(cdiv, b.lastChild);
+            } 
+        }
+  }( document.isTrellix ));
+}
+
+</script>
+
+<div id="tb_container" style="background:#DFDCCF; border-bottom:1px solid #393939; position:relative; z-index:999999999!important">
+<!--form name="search" onSubmit="return searchit()" id='header_search' >
+<input type="text" placeholder="Search" size=30 name="search2" value="">
+<input type="button" value="Go!" onClick="searchit()">
+</form>
+<style>
+form#header_search {
+    width: 916px;
+    margin: 0 auto 8px;
+    position: relative;
+}
+
+
+form#header_search input {
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    background: #F4F2E9;
+    border: 1px solid #BBB8B8;
+    transition: background-color 300ms ease-out,
+                color 300ms ease;
+}
+
+form#header_search input[type="text"] {
+    width: 100%;
+}
+form#header_search input[type="text"]:focus {
+    border-color: #A2D054;
+    background-color: #fff;
+    box-shadow: 0 0px 12px -4px #A2D054;
+}
+
+
+
+form#header_search input[type="button"] {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    opacity: 1;
+    background: #DFDCCF;
+    color: #463734;
+    width: 125px;
+    cursor: pointer;
+    height: 38px;
+    border: none;
+}
+form#header_search input[type="text"]:focus ~ input[type='button']:hover,
+form#header_search input[type='button']:hover {
+    background-color: #A5CE56;
+    color: #fff;
+}
+form#header_search input[type="text"]:focus ~ input[type='button'] {
+    background-color: #52AEDF;
+    color: #fff;
+}
+
+</style>
+
+<script>
+function searchit(){
+    
+    // determine environment 
+    var search_env 
+    if (lycos_ad_www_server.indexOf(".pd.") > -1) {
+       search_env = 'http://search51.pd.lycos.com/a/';
+    } else if (lycos_ad_www_server.indexOf(".qa.") > -1) {
+       search_env = 'http://search51.qa.lycos.com/a/';
+    } else {
+       search_env = 'http://search51.lycos.com/a/';
+    }
+
+var search_term = encodeURIComponent(document.search.search2.value)
+var search_url = search_env+search_term;
+window.open(search_url);
+
+return false
+}
+</script-->
+<style>
+    .adCenterClass{margin:0 auto}
+</style>
+<div id="tb_ad" class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
+
+<div id="ad_container" style="display:block!important; float:left; width:728px ">
+<script type="text/javascript">
+if (typeof lycos_ad !== "undefined" && "leaderboard" in lycos_ad) {
+  document.write(lycos_ad['leaderboard']);
+}
+</script>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+if (typeof lycos_ad !== "undefined" && "slider" in lycos_ad) {
+  document.write(lycos_ad['slider']);
+}
+</script> <!-- added 7/22 -->
+<div id="FooterAd" style="background:#DFDCCF; border-top:1px solid #393939; clear:both; display:none; width:100%!important; position:relative; z-index:999999!important; height:90px!important"> 
+<div class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
+<div id="footerAd_container" style="display:block!important; float:left; width:728px">
+<iframe id="lycosFooterAdiFrame" style="border:0; display:block; float:left; height:96px; overflow:hidden; padding:0; width:750px"></iframe>
+</div>
+</div>
+</div>
+
+
+		<div class=Header>Raw_Ethernet</div>
+		<BR>
+		<table class=mainTable>
+			<tr>
+				<td class="leftColumn">
+					<div class=mbutton ><A href='Construct_WAV.html'>Construct_WAV</A><A href='Raw_Ethernet.html'>Raw_Ethernet</A><A href='Read_File_From_Kernel_Module.html'>Read_File_From_Kernel_Module</A><A href='accelerate.pl.html'>accelerate.pl</A><A href='header_file_dependencies.html'>header_file_dependencies</A><A href='mboot.patch.html'>mboot.patch</A><A href='vi_tips.html'>vi_tips</A></div>
+				</td>
+				<td class=verticalBar>
+					 
+				</td>
+				<td class=contentArea>
+					<table class=subTable>
+						<tr>
+							<td class=dirMenu>
+								<div class=dirMenu><DIV class=topNav><a href='/About_me.html'>Home</a></DIV></div>
+							</td>
+						</tr>
+						<tr>
+							<td class=fileArea>
+								<PRE>This was a good discovery - ability to send raw ethernet packets. I am sure,
+there are many out there who are eager to understand how networking really
+works. This is something you've got to try. The main.cc below sends an ARP
+request. My plan is to extend this program to be able to send PING (echo
+request) packets!
+
+EthernetRadio.cc
+----------------
+
+<font color="#902020"> 1</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;linux/if_packet.h&gt;</font>
+<font color="#902020"> 2</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;net/if.h&gt;</font>
+
+<font color="#902020"> 3</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;netinet/ether.h&gt;</font>
+<font color="#902020"> 4</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;netinet/in.h&gt;</font>
+<font color="#902020"> 5</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;stdio.h&gt;</font>
+
+<font color="#902020"> 6</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;stdlib.h&gt;</font>
+<font color="#902020"> 7</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;string.h&gt;</font>
+<font color="#902020"> 8</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;sys/ioctl.h&gt;</font>
+
+<font color="#902020"> 9</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;sys/socket.h&gt;</font>
+<font color="#902020">10</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;unistd.h&gt;</font>
+<font color="#902020">11</font>
+<font color="#902020">12</font>
+<font color="#902020">13</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;EthernetRadio.h&gt;</font>
+
+<font color="#902020">14</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;iostream&gt;</font>
+<font color="#902020">15</font>
+<font color="#902020">16</font>
+<font color="#902020">17</font>  EthernetRadio* EthernetRadio::instance;
+<font color="#902020">18</font>
+<font color="#902020">19</font>
+<font color="#902020">20</font>  <font color="#2e8b57"><b>int</b></font> eth_open(){
+
+<font color="#902020">21</font>          <font color="#2e8b57"><b>struct</b></font> sockaddr_ll sa;
+<font color="#902020">22</font>          <font color="#2e8b57"><b>struct</b></font> ifreq ifr;
+<font color="#902020">23</font>          <font color="#2e8b57"><b>int</b></font> i;
+<font color="#902020">24</font>          <font color="#2e8b57"><b>int</b></font> sockfd=-<font color="#ff00ff">1</font>;
+
+<font color="#902020">25</font>
+<font color="#902020">26</font>          sockfd = socket(PF_PACKET, SOCK_RAW, htons(ETH_P_ALL));
+<font color="#902020">27</font>          <font color="#804040"><b>if</b></font> (sockfd &lt; <font color="#ff00ff">0</font>){
+<font color="#902020">28</font>                  perror(<font color="#ff00ff">&quot;socket&quot;</font>);
+
+<font color="#902020">29</font>                  <font color="#804040"><b>return</b></font> -<font color="#ff00ff">1</font>;
+<font color="#902020">30</font>          }
+<font color="#902020">31</font>
+<font color="#902020">32</font>          memset(&amp;sa, <font color="#ff00ff">0</font>, <font color="#804040"><b>sizeof</b></font> sa);
+
+<font color="#902020">33</font>          sa.sll_family   = AF_PACKET;
+<font color="#902020">34</font>          sa.sll_protocol = htons(ETH_P_ALL);
+<font color="#902020">35</font>          sa.sll_ifindex  = if_nametoindex(ETHERNET_INTERFACE);
+<font color="#902020">36</font>
+<font color="#902020">37</font>          <font color="#804040"><b>if</b></font> (bind(sockfd, (<font color="#2e8b57"><b>struct</b></font> sockaddr*) &amp;sa, <font color="#804040"><b>sizeof</b></font> sa) &lt; <font color="#ff00ff">0</font>){
+
+<font color="#902020">38</font>                  perror(<font color="#ff00ff">&quot;bind&quot;</font>);
+<font color="#902020">39</font>                  <font color="#804040"><b>return</b></font> -<font color="#ff00ff">1</font>;
+<font color="#902020">40</font>          }
+<font color="#902020">41</font>          <font color="#804040"><b>return</b></font> sockfd;
+
+<font color="#902020">42</font>  }
+<font color="#902020">43</font>
+<font color="#902020">44</font>  EthernetRadio::EthernetRadio(){
+<font color="#902020">45</font>          <font color="#2e8b57"><b>int</b></font> i;
+<font color="#902020">46</font>          sock_fd=eth_open();
+<font color="#902020">47</font>  }
+
+<font color="#902020">48</font>
+<font color="#902020">49</font>
+<font color="#902020">50</font>  EthernetRadio* EthernetRadio::getHandle(){
+<font color="#902020">51</font>          <font color="#804040"><b>if</b></font>(instance==<font color="#ff00ff">0</font>){
+<font color="#902020">52</font>                  instance=<font color="#804040"><b>new</b></font> EthernetRadio();
+
+<font color="#902020">53</font>          }
+<font color="#902020">54</font>          <font color="#804040"><b>return</b></font> instance;
+<font color="#902020">55</font>  }
+<font color="#902020">56</font>
+<font color="#902020">57</font>  <font color="#2e8b57"><b>int</b></font> EthernetRadio::send(<font color="#2e8b57"><b>char</b></font>* buffer,<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> protocol, <font color="#2e8b57"><b>int</b></font> length){
+
+<font color="#902020">58</font>          <font color="#2e8b57"><b>int</b></font> i;
+<font color="#902020">59</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> *ptr;
+<font color="#902020">60</font>
+<font color="#902020">61</font>          <font color="#0000ff">//for(i=0;i&lt;12;i++)buffer[i]=0xff;</font>
+
+<font color="#902020">62</font>          ptr=(<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font>*)&amp;buffer[<font color="#ff00ff">12</font>];
+<font color="#902020">63</font>          <font color="#0000ff">//*ptr=htons(protocol);</font>
+<font color="#902020">64</font>          <font color="#804040"><b>return</b></font> write(sock_fd,buffer,length);
+
+<font color="#902020">65</font>  }
+<font color="#902020">66</font>
+<font color="#902020">67</font>  <font color="#2e8b57"><b>int</b></font> EthernetRadio::receive(<font color="#2e8b57"><b>char</b></font>* buffer,<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> protocol){
+
+<font color="#902020">68</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> *ptr;
+<font color="#902020">69</font>          <font color="#2e8b57"><b>int</b></font> bytes_read;
+<font color="#902020">70</font>          protocol=htons(protocol);
+<font color="#902020">71</font>          bytes_read=read(sock_fd,buffer,ETH_FRAME_LEN);
+
+<font color="#902020">72</font>          ptr=(<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> *)&amp;buffer[<font color="#ff00ff">12</font>];
+<font color="#902020">73</font>          <font color="#804040"><b>if</b></font>(*ptr==protocol)<font color="#804040"><b>return</b></font> bytes_read;
+
+<font color="#902020">74</font>          <font color="#804040"><b>else</b></font> <font color="#804040"><b>return</b></font> -<font color="#ff00ff">1</font>;
+<font color="#902020">75</font>  }
+
+EthernetRadio.h
+---------------
+
+<font color="#902020"> 1</font>  <font color="#a020f0">#ifndef __EthernetRadio_H__</font>
+
+<font color="#902020"> 2</font>  <font color="#a020f0">#define __EthernetRadio_H__</font>
+<font color="#902020"> 3</font>
+<font color="#902020"> 4</font>  <font color="#a020f0">#define ETHERNET_INTERFACE      </font><font color="#ff00ff">&quot;eth0&quot;</font>
+<font color="#902020"> 5</font>
+
+<font color="#902020"> 6</font>  <font color="#2e8b57"><b>class</b></font> EthernetRadio{
+<font color="#902020"> 7</font>          <font color="#2e8b57"><b>int</b></font> sock_fd;
+<font color="#902020"> 8</font>          <font color="#2e8b57"><b>static</b></font> EthernetRadio *instance;
+
+<font color="#902020"> 9</font>          EthernetRadio();
+<font color="#902020">10</font>          <font color="#804040"><b>public</b></font>:
+<font color="#902020">11</font>                  <font color="#2e8b57"><b>static</b></font> EthernetRadio *getHandle();
+<font color="#902020">12</font>                  <font color="#2e8b57"><b>int</b></font> send(<font color="#2e8b57"><b>char</b></font>* buffer,<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> protocol,<font color="#2e8b57"><b>int</b></font> length);
+
+<font color="#902020">13</font>                  <font color="#2e8b57"><b>int</b></font> receive(<font color="#2e8b57"><b>char</b></font>* buffer,<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> protocol);
+<font color="#902020">14</font>  };
+<font color="#902020">15</font>
+
+<font color="#902020">16</font>  <font color="#a020f0">#endif</font><font color="#0000ff">//__EthernetRadio_H__</font>
+
+
+main.cc
+-------
+
+<font color="#902020"> 1</font>  <font color="#a020f0">#include </font><font color="#ff00ff">&lt;EthernetRadio.h&gt;</font>
+<font color="#902020"> 2</font>
+
+<font color="#902020"> 3</font>  <font color="#2e8b57"><b>typedef</b></font> <font color="#2e8b57"><b>struct</b></font>
+<font color="#902020"> 4</font>  {
+<font color="#902020"> 5</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font>  ar_hrd;         <font color="#0000ff">/*</font><font color="#0000ff"> format of hardware address   </font><font color="#0000ff">*/</font>
+
+<font color="#902020"> 6</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font>  ar_pro;         <font color="#0000ff">/*</font><font color="#0000ff"> format of protocol address   </font><font color="#0000ff">*/</font>
+<font color="#902020"> 7</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>char</b></font>   ar_hln;         <font color="#0000ff">/*</font><font color="#0000ff"> length of hardware address   </font><font color="#0000ff">*/</font>
+
+<font color="#902020"> 8</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>char</b></font>   ar_pln;         <font color="#0000ff">/*</font><font color="#0000ff"> length of protocol address   </font><font color="#0000ff">*/</font>
+<font color="#902020"> 9</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font>  ar_op;          <font color="#0000ff">/*</font><font color="#0000ff"> ARP opcode (command)         </font><font color="#0000ff">*/</font>
+
+<font color="#902020">10</font>  }* ARPHeaderPointer __attribute__((packed));
+<font color="#902020">11</font>
+<font color="#902020">12</font>  <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> HTONS(<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>short</b></font> s){
+
+<font color="#902020">13</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>char</b></font> *p;
+<font color="#902020">14</font>          <font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>char</b></font> temp;
+<font color="#902020">15</font>          p=(<font color="#2e8b57"><b>unsigned</b></font> <font color="#2e8b57"><b>char</b></font>*)&amp;s;
+
+<font color="#902020">16</font>          temp=p[<font color="#ff00ff">0</font>];
+<font color="#902020">17</font>          p[<font color="#ff00ff">0</font>]=p[<font color="#ff00ff">1</font>];
+<font color="#902020">18</font>          p[<font color="#ff00ff">1</font>]=temp;
+
+<font color="#902020">19</font>          <font color="#804040"><b>return</b></font> s;
+<font color="#902020">20</font>  }
+<font color="#902020">21</font>
+<font color="#902020">22</font>
+<font color="#902020">23</font>  <font color="#2e8b57"><b>int</b></font> main(){
+
+<font color="#902020">24</font>
+<font color="#902020">25</font>          <font color="#2e8b57"><b>int</b></font> i;
+<font color="#902020">26</font>          <font color="#2e8b57"><b>char</b></font> b[<font color="#ff00ff">1024</font>];
+<font color="#902020">27</font>          EthernetRadio *s;
+
+<font color="#902020">28</font>
+<font color="#902020">29</font>
+<font color="#902020">30</font>          <font color="#804040"><b>for</b></font>(i=<font color="#ff00ff">0</font>;i&lt;<font color="#ff00ff">1024</font>;i++)b[i]=<font color="#ff00ff">0</font>;
+<font color="#902020">31</font>
+<font color="#902020">32</font>          s=EthernetRadio::getHandle();
+
+<font color="#902020">33</font>
+<font color="#902020">34</font>          ARPHeaderPointer arpHeaderPointer;
+<font color="#902020">35</font>
+<font color="#902020">36</font>          arpHeaderPointer=(ARPHeaderPointer)&amp;b[<font color="#ff00ff">14</font>];
+<font color="#902020">37</font>          arpHeaderPointer-&gt;ar_hrd=HTONS(<font color="#ff00ff">1</font>);
+
+<font color="#902020">38</font>          arpHeaderPointer-&gt;ar_pro=HTONS(<font color="#ff00ff">0x800</font>);
+<font color="#902020">39</font>          arpHeaderPointer-&gt;ar_hln=<font color="#ff00ff">6</font>;
+<font color="#902020">40</font>          arpHeaderPointer-&gt;ar_pln=<font color="#ff00ff">4</font>;
+
+<font color="#902020">41</font>          arpHeaderPointer-&gt;ar_op=HTONS(<font color="#ff00ff">1</font>);
+<font color="#902020">42</font>
+<font color="#902020">43</font>          <font color="#804040"><b>for</b></font>(i=<font color="#ff00ff">0</font>;i&lt;<font color="#ff00ff">6</font>;i++)b[i]=<font color="#ff00ff">0xff</font>;
+
+<font color="#902020">44</font>
+<font color="#902020">45</font>          b[<font color="#ff00ff">6</font>]=<font color="#ff00ff">0x00</font>;
+<font color="#902020">46</font>          b[<font color="#ff00ff">7</font>]=<font color="#ff00ff">0x07</font>;
+<font color="#902020">47</font>          b[<font color="#ff00ff">8</font>]=<font color="#ff00ff">0xe9</font>;
+
+<font color="#902020">48</font>          b[<font color="#ff00ff">9</font>]=<font color="#ff00ff">0x82</font>;
+<font color="#902020">49</font>          b[<font color="#ff00ff">10</font>]=<font color="#ff00ff">0x00</font>;
+<font color="#902020">50</font>          b[<font color="#ff00ff">11</font>]=<font color="#ff00ff">0x49</font>;
+
+<font color="#902020">51</font>
+<font color="#902020">52</font>          b[<font color="#ff00ff">22</font>]=<font color="#ff00ff">0x00</font>;
+<font color="#902020">53</font>          b[<font color="#ff00ff">23</font>]=<font color="#ff00ff">0x07</font>;
+<font color="#902020">54</font>          b[<font color="#ff00ff">24</font>]=<font color="#ff00ff">0xe9</font>;
+
+<font color="#902020">55</font>          b[<font color="#ff00ff">25</font>]=<font color="#ff00ff">0x82</font>;
+<font color="#902020">56</font>          b[<font color="#ff00ff">26</font>]=<font color="#ff00ff">0x00</font>;
+<font color="#902020">57</font>          b[<font color="#ff00ff">27</font>]=<font color="#ff00ff">0x49</font>;
+
+<font color="#902020">58</font>
+<font color="#902020">59</font>          b[<font color="#ff00ff">28</font>]=<font color="#ff00ff">192</font>;
+<font color="#902020">60</font>          b[<font color="#ff00ff">29</font>]=<font color="#ff00ff">168</font>;
+<font color="#902020">61</font>          b[<font color="#ff00ff">30</font>]=<font color="#ff00ff">8</font>;
+
+<font color="#902020">62</font>          b[<font color="#ff00ff">31</font>]=<font color="#ff00ff">56</font>;
+<font color="#902020">63</font>
+<font color="#902020">64</font>          b[<font color="#ff00ff">38</font>]=<font color="#ff00ff">192</font>;
+<font color="#902020">65</font>          b[<font color="#ff00ff">39</font>]=<font color="#ff00ff">168</font>;
+
+<font color="#902020">66</font>          b[<font color="#ff00ff">40</font>]=<font color="#ff00ff">8</font>;
+<font color="#902020">67</font>          b[<font color="#ff00ff">41</font>]=<font color="#ff00ff">63</font>;
+<font color="#902020">68</font>
+<font color="#902020">69</font>          s-&gt;send(b,<font color="#ff00ff">0x806</font>,<font color="#ff00ff">42</font>);
+
+<font color="#902020">70</font>
+<font color="#902020">71</font>          <font color="#804040"><b>return</b></font> <font color="#ff00ff">0</font>;
+<font color="#902020">72</font>  }
+</PRE>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</HTML>

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://members.tripod.com/kashyap-1978/sitemap.xml
